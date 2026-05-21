@@ -619,7 +619,7 @@ jobs:
           cd kernel_workspace
           echo "CONFIG_BBG=y" >> ./common/arch/arm64/configs/gki_defconfig
           cd ./common
-          curl -sSL https://github.com/cctv18/Baseband-guard/raw/master/setup.sh | bash
+          curl -sSL https://raw.githubusercontent.com/cctv18/Baseband-guard/master/setup.sh | bash
           sed -i '/^config LSM$/,/^help$/{ /^[[:space:]]*default/ { /baseband_guard/! s/selinux/selinux,baseband_guard/ } }' security/Kconfig
 
       - name: 添加制作名称
