@@ -545,6 +545,33 @@ jobs:
             echo "CONFIG_SYSVIPC=y" >> ./arch/arm64/configs/gki_defconfig
             echo "CONFIG_DEVTMPFS=y" >> ./arch/arm64/configs/gki_defconfig
             echo "CONFIG_NAMESPACES=y" >> ./arch/arm64/configs/gki_defconfig
+            # +++++++++++++++++++++ zerofo add +++++++++++++++++++++++++++++++++
+            echo "CONFIG_UTS_NS=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_USER_NS=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_NET_NS=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CGROUPS=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CGROUP_CPUACCT=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CGROUP_DEVICE=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CGROUP_FREEZER=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CGROUP_SCHED=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_CPUSETS=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_MEMCG=y" >> ./arch/arm64/configs/gki_defconfig
+
+
+
+            # 存储
+            echo "CONFIG_OVERLAY_FS=y" >> ./arch/arm64/configs/gki_defconfig
+            # 网络
+            echo "CONFIG_VETH=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_BRIDGE=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_BRIDGE_NETFILTER=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_IP_NF_FILTER=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_IP_NF_TARGET_MASQUERADE=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_NETFILTER_XT_MATCH_CONNTRACK=y" >> ./arch/arm64/configs/gki_defconfig
+            echo "CONFIG_NETFILTER_XT_MATCH_IPVS=y" >> ./arch/arm64/configs/gki_defconfig
+
+            # ==================== zerofo add =================================
+            
             echo "CONFIG_POSIX_MQUEUE=y" >> ./arch/arm64/configs/gki_defconfig
             echo "CONFIG_NETFILTER_XT_MATCH_ADDRTYPE=y" >> ./arch/arm64/configs/gki_defconfig
             echo "CONFIG_NETFILTER_XT_TARGET_LOG=y" >> ./arch/arm64/configs/gki_defconfig
